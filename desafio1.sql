@@ -66,10 +66,11 @@ INSERT INTO SpotifyClone.plans(plan_name, plan_value)
 VALUES('gratuito', 0.00),
 ('familiar', 7.99),
 ('universitÃ¡rio', 5.99),
-('pessoal', 6.99)
+('pessoal', 6.99);
 
 INSERT INTO SpotifyClone.users(user_name, user_age, plan_id, subscription_date)
-VALUES ('Thati', 23, 1, '2019-10-20'),
+VALUES 
+  ('Thati', 23, 1, '2019-10-20'),
   ('Cintia', 35, 2, '2017-12-30'),
   ('Bill', 20, 3, '2019-06-05'),
   ('Roger', 45, 4, '2020-05-13'),
