@@ -60,3 +60,9 @@ CREATE TABLE SpotifyClone.history (
         REFERENCES users (user_id),
     PRIMARY KEY (song_id , user_id)
 )  ENGINE=INNODB;
+
+INSERT INTO SpotifyClone.plans(plan_name, plan_value)
+VALUES('gratuito', 0.00),
+('familiar', 7.99),
+('universitÃ¡rio', 5.99),
+('pessoal', 6.99)
