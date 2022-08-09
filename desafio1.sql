@@ -49,3 +49,14 @@ CREATE TABLE SpotifyClone.followed_artists (
         REFERENCES users (user_id),
     PRIMARY KEY (artist_id , user_id)
 )  ENGINE=INNODB;
+
+CREATE TABLE SpotifyClone.history (
+    song_id INT NOT NULL,
+    user_id INT NOT NULL,
+    reproduction_date DATETIME,
+    FOREIGN KEY (song_id)
+        REFERENCES songs (song_id),
+    FOREIGN KEY (user_id)
+        REFERENCES users (user_id),
+    PRIMARY KEY (song_id , user_id)
+)  ENGINE=INNODB;
