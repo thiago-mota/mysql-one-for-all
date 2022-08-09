@@ -88,7 +88,7 @@ VALUES ('Walter Phoenix'),
   ('Tyler Isle'),
   ('Fog');
 
-INSERT INTO SpotifyClone.albums(album_name, artist_id, release_year)
+INSERT INTO SpotifyClone.albums(album_name, release_year, artist_id)
 VALUES(
 'Envious', 1990, 1),
 ('Exuberant', 1993, 1),
