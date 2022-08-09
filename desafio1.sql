@@ -35,8 +35,8 @@ CREATE TABLE SpotifyClone.albums (
 CREATE TABLE SpotifyClone.songs (
     song_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     song_name VARCHAR(100) NOT NULL,
-    song_duration INT NOT NULL,
     album_id INT NOT NULL,
+    song_duration INT NOT NULL,
     FOREIGN KEY (album_id)
         REFERENCES albums (album_id)
 )  ENGINE=INNODB;
@@ -88,15 +88,16 @@ VALUES ('Walter Phoenix'),
   ('Tyler Isle'),
   ('Fog');
 
- INSERT INTO SpotifyClone.albums(album_name, artist_id, release_year)
-  VALUES(
-  'Envious', 1990, 1),
-  ('Exuberant', 1993, 1),
-  ('Hallowed Steam', 1995, 2),
-  ('Incandescent', 1998, 3),
-  ('Temporary Culture', 2001, 4),
-  ('Library of liberty', 2003, 4),
-  ('Chained Down', 2007, 5),
-  ('Cabinet of fools', 2012, 5),
-  ('No guarantees', 2015, 5),
-  ('Apparatus', 2015, 6);
+INSERT INTO SpotifyClone.albums(album_name, artist_id, release_year)
+VALUES(
+'Envious', 1990, 1),
+('Exuberant', 1993, 1),
+('Hallowed Steam', 1995, 2),
+('Incandescent', 1998, 3),
+('Temporary Culture', 2001, 4),
+('Library of liberty', 2003, 4),
+('Chained Down', 2007, 5),
+('Cabinet of fools', 2012, 5),
+('No guarantees', 2015, 5),
+('Apparatus', 2015, 6);
+
