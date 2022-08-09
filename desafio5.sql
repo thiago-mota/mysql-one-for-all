@@ -6,4 +6,4 @@ FROM
         INNER JOIN
     SpotifyClone.history AS history ON songs.song_id = history.song_id
 GROUP BY song_name
-ORDER BY reproducoes DESC LIMIT 2
+ORDER BY reproducoes DESC, cancao LIMIT 2
