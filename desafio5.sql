@@ -7,5 +7,3 @@ FROM
     SpotifyClone.history AS history ON songs.song_id = history.song_id
 GROUP BY song_name
 ORDER BY song_name DESC
-
-Error Code: 1052. Column 'song_id' in field list is ambiguous
