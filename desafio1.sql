@@ -59,7 +59,7 @@ CREATE TABLE SpotifyClone.history (
         REFERENCES songs (song_id),
     FOREIGN KEY (user_id)
         REFERENCES users (user_id),
-    PRIMARY KEY (song_id , user_id)
+    CONSTRAINT PRIMARY KEY (song_id , user_id)
 )  ENGINE=INNODB;
 
 INSERT INTO SpotifyClone.plans(plan_name, plan_value)
